@@ -2456,13 +2456,12 @@ video {
 }
 
 /* maximize the space for text*/
-.container, .main-content, .content {
+/* .container, .main-content, .content {
   width: 100%;
   max-width: 100%;
   padding: 0 20px; /* Optional for visual comfort */
-  margin: 0;
-}
-
+/*  margin: 0;
+} */
 /* go to the top*/
 #go-to-top {
   position: fixed;
