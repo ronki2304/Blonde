@@ -2553,3 +2553,46 @@ nav .flex-no-shrink img {
       font-size: 1rem;    /* Larger text on bigger screens */
   }
 }
+
+
+.navmenu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.group:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #2d3748; /* Dark background for the submenu */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.menu-item > a {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.submenu a {
+  display: block;
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.submenu a:hover {
+  opacity: 0.75;
+}

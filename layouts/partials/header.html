@@ -44,15 +44,33 @@
                     </a>
                     {{ end }}
                 </div>
-                <div class="navmenu">
+                <div class="navmenu flex flex-wrap items-center">
                     {{ range .Site.Menus.main }}
-                    <a href="{{ .URL }}"
-                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
-                        {{ .Name }}
-                    </a>
+                        {{ if .HasChildren }}
+                            <!-- Menu Item with Submenu -->
+                            <div class="menu-item group inline-block">
+                                <a href="{{ .URL }}" class="no-underline duration-200 mt-4 sm:mt-0 text-white hover:opacity-75 mr-4 block sm:inline-block">
+                                    {{ .Name }}
+                                </a>
+                                <!-- Submenu Container -->
+                                <div class="submenu hidden group-hover:block bg-gray-800 p-4 rounded shadow-lg absolute mt-2">
+                                    {{ range .Children }}
+                                        <a href="{{ .URL }}" class="no-underline duration-200 block mt-2 text-white hover:opacity-75">
+                                            {{ .Name }}
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        {{ else }}
+                            <!-- Menu Item without Submenu -->
+                            <div class="menu-item inline-block">
+                                <a href="{{ .URL }}" class="no-underline duration-200 mt-4 sm:mt-0 text-white hover:opacity-75 mr-4 block sm:inline-block">
+                                    {{ .Name }}
+                                </a>
+                            </div>
+                        {{ end }}
                     {{ end }}
                 </div>
-
                 <div class="text-white invisible md:visible">
                     <span>|</span>
                     <button onclick="toggleDarkMode()" class="focus-visible:outline-none"
