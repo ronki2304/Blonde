@@ -1,6 +1,8 @@
 {{ define "header_css" }}{{ end }}
 
 {{ define "main" }}
+
+
 <div class="grid grid-cols-3 gap-4">
   {{ if .Site.Params.widgets.display }}
   <div class="col-span-3 lg:col-span-2 dark:text-white">
@@ -12,7 +14,9 @@
         <aside id="meta">
           <div>
             <section>
-              <h4 id="date"><span class="icon-access_time mr-2"></span>{{ .Date.Format "2006/01/02" }}
+              <h4 id="date"><span class="fas fa-calendar-alt mr-2"></span>{{ .Date.Format "2006/01/02" }}
+              </h4>
+              <h4 id="readingtime"><span class="fas fa-clock mr-2"></span>{{ .ReadingTime  }} min
               </h4>
             </section>
             {{ with .Params.tags }}
