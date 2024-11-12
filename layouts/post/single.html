@@ -14,10 +14,18 @@
         <aside id="meta">
           <div>
             <section>
-              <h4 id="date"><span class="fas fa-calendar-alt mr-2"></span>{{ .Date.Format "2006-01-02" }}
-              </h4>
-              <h4 id="readingtime"><span class="fas fa-clock mr-2"></span>{{ .ReadingTime  }} min
-              </h4>
+               <div class="flex justify-between items-center text-sm text-gray-600 dark:text-gray-400 mt-4">
+                <!-- Reading Time (Left) -->
+                <div class="flex items-center">
+                    <span class="fas fa-clock mr-2"></span>{{ .ReadingTime }} min
+                </div>
+    
+                <!-- Release Date (Right) -->
+                <div class="flex items-center">
+                    <span class="fas fa-calendar-alt mr-1"></span>
+                    <time>{{ .Date.Format "2006-01-02" }}</time>
+                </div>
+            </div>
             </section>
             {{ with .Params.tags }}
             <div id="tags">
