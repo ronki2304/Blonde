@@ -58,7 +58,7 @@
   
   <!-- START - We recommend to place the below code where you want the form in your website html  -->
   <div class="sib-form" style="text-align: center;">
-    <div id="sib-form-container" class="sib-form-container">
+    <div id="sib-form-container" class="bg-white panel mb-3 dark:bg-warmgray-900">
       <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; border-radius:3px; border-color:#ff4949;max-width:540px;">
         <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
           <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
@@ -81,8 +81,8 @@
         </div>
       </div>
       <div></div>
-      <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-        <form id="sib-form" method="POST" action="https://bbaa4370.sibforms.com/serve/MUIFALlDrF29_SdgNmbVG6ORr8mwhNVzgrNEIxz0Gv1oWhTV76c17xNEPHtAtSa_2R-wrFD3J2Uge-YdO-WdGbJiHDzfBCQr0fTJMoJr_xD0FWFbi0_mX0uCsm-7YEZSGBHsEV8lCNukjUan3pkFiI9UjCgLF8W91weqddI_NCIaKoHQbJIo2FfrgNqYbxhry2MRPvkc4c_ziGI3" data-type="subscription">
+      <div id="sib-container" >
+        <form id="sib-form" method="POST"  action="https://bbaa4370.sibforms.com/serve/MUIFALlDrF29_SdgNmbVG6ORr8mwhNVzgrNEIxz0Gv1oWhTV76c17xNEPHtAtSa_2R-wrFD3J2Uge-YdO-WdGbJiHDzfBCQr0fTJMoJr_xD0FWFbi0_mX0uCsm-7YEZSGBHsEV8lCNukjUan3pkFiI9UjCgLF8W91weqddI_NCIaKoHQbJIo2FfrgNqYbxhry2MRPvkc4c_ziGI3" data-type="subscription">
           <div style="padding: 8px 0;">
             <div class="text-gray-900 font-bold text-xl mb-2 dark:text-white">
               <p>Newsletter</p>
@@ -98,11 +98,11 @@
           <div style="padding: 8px 0;">
             <div class="sib-input sib-form-block">
               <div class="form__entry entry_block">
-                <div class="text-gray-700 text-base  dark:text-gray-300">
+                <div class="text-gray-700 text-base  dark:text-gray-300" >
                   <label for="PRENOM" data-required="*">Entrez votre PRENOM</label>
   
                   <div >
-                    <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="Prénom" data-required="true" required />
+                    <input  class="w-full p-3 focus:outline-none dark:bg-warmgray-800 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" maxlength="200" type="text" id="PRENOM" name="PRENOM" autocomplete="off" placeholder="Prénom" data-required="true" required  />
                   </div>
                 </div>
   
@@ -119,7 +119,8 @@
                   <label for="EMAIL" data-required="*">Veuillez renseigner votre adresse email pour vous inscrire</label>
   
                   <div>
-                    <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required />
+                    
+                    <input class=" w-full p-3  focus:outline-none dark:bg-warmgray-800 dark:text-white placeholder-gray-700 dark:placeholder-gray-300 " type="search" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required />
                   </div>
                 </div>
   
@@ -139,8 +140,7 @@
                     <label>
                       <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" />
                       <span class="checkbox checkbox_tick_positive"
-              style="margin-left:"
-              ></span><span style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;"><p>J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre politique de confidentialité et mentions légales.</p></span> </label>
+              style="margin-left"></span><span style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;"><p>J'accepte de recevoir vos e-mails et confirme avoir pris connaissance de votre politique de confidentialité et mentions légales.</p></span> </label>
                   </div>
                 </div>
                 <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; border-radius:3px; border-color:#ff4949;">
