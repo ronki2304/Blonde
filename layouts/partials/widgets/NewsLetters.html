@@ -27,34 +27,39 @@
     text-align: left;
     font-family: Helvetica, sans-serif;
     color: #c0ccda;
+    background-color: transparent;
   }
 
   #sib-container input::placeholder {
     text-align: left;
     font-family: Helvetica, sans-serif;
     color: #c0ccda;
+    background-color: transparent;
   }
 
   #sib-container textarea::placeholder {
     text-align: left;
     font-family: Helvetica, sans-serif;
-
+    color: #c0ccda;
+    background-color: transparent;
   }
 
   #sib-container a {
     text-decoration: underline;
     color: #2BB2FC;
+    background-color: transparent;
   }
   #sib-container {
   background-color: transparent; /* or any preferred color */
 }
+
 </style>
 
 <!--  END - We recommend to place the above code in head tag of your website html -->
 
 <!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center;                            ">
-  <div id="sib-form-container" class="sib-form-container">
+<div class="sib-form" style="text-align: center; ">
+  <div id="sib-form-container" class="bg-white panel mb-3 dark:bg-warmgray-900">
     <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; border-radius:3px; border-color:#ff4949;max-width:540px;">
       <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
         <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
@@ -79,7 +84,7 @@
     <div></div>
     <div id="sib-container" >
       <form id="sib-form" method="POST"  action="https://bbaa4370.sibforms.com/serve/{{.Site.Params.BrevoKey}}" data-type="subscription">        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="font-size:32px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left">
+          <div class="sib-form-block text-gray-900 font-bold text-xl mb-2 dark:text-white">
             <p>Newsletter</p>
           </div>
         </div>
@@ -114,7 +119,7 @@
                 <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">{{ T "NewsLetter.EmailMandatory"}}</label>
 
                 <div class="entry__field">
-                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                  <input class="input " type="search" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
                 </div>
               </div>
 
