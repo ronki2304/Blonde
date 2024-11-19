@@ -4,7 +4,7 @@
         <nav class="flex items-center justify-between flex-wrap {{ .Site.Params.base_color }} p-6">
             <div class="flex items-center flex-no-shrink {{ .Site.Params.base_color }} text-white mr-6">
                 {{ if .Site.Params.logo }}
-                <a href="{{ .Site.BaseURL }}">
+                <a href="{{  .Site.BaseURL }}/{{.Language.Lang}}">
                     <img src="{{ .Site.Params.logo | relURL }}" alt="{{ .Site.Title }} logo"
                         class="h-10 w-auto max-h-12 mr-2">
                 </a>
