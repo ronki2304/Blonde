@@ -2596,3 +2596,10 @@ nav .flex-no-shrink img {
 .submenu a:hover {
   opacity: 0.75;
 }
+
+.nav .menu-flag {
+  width: 20px; /* Adjust the width of the flag */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 8px; /* Space between the flag and the text */
+  vertical-align: middle; /* Align with text */
+}
